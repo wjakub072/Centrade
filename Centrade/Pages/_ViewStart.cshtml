@@ -1,0 +1,13 @@
+﻿@{
+    var routeUrl = ViewContext.RouteData.Values["Page"].ToString();
+
+    var clientPages = new List<string> { "/Client", "/Report", "/Success"};
+
+    if (clientPages.Contains(routeUrl))
+    {
+        Layout = "_ClientLayout";
+    }
+    else {
+        Layout = "_Layout";
+    }
+}

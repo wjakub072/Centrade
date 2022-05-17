@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["MainLayout"] - Centrade</title>
+    <link rel="shortcut icon" href="~/imageSources/LogoPage.png">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Centrade.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a href="Index"><img src="~/imageSources/Banner.png" class="navbar-brand banner" alt="banner"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="Index">Oferta</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Help">Pomoc i obsługa</a>
+                      </li>
+                  </ul>
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="Login">Zaloguj się</a>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+        </nav>
+        <div class="ribbonLabel"></div>
+    </header>
+    <div class="container">
+        <main role="main" class="bodyContent">
+            @RenderBody()
+        </main>
+    </div>
+
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start">
+    <section class="">
+      <div class="containerFooter text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 info">
+            <h6 class="text-uppercase fw-bold">CENTRADE</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto footerTile corpBG"/>
+            <p>
+              Grupa CENTRADE, zapewnia ubezpieczenia osobowe od ponad 15 lat. 
+              Działa na terenie rynków europejskich dostarcząc swoje usługi
+              w bardzo konkurencyjnych cenach. 
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">Na skróty</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto footerTile corpBG"/>
+            <p>
+              <a href="#!" class="">Kup ubezpieczenie online</a>
+            </p>
+            <p>
+              <a href="#!" class="">Likwidacja szkód</a>
+            </p>
+            <p>
+              <a href="#!" class="">Znajdź Agenta</a>
+            </p>
+            <p>
+              <a href="#!" class="">Znajdź warsztat</a>
+            </p>
+            <p>
+              <a href="#!" class="">Kontakt</a>
+            </p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <h6 class="text-uppercase fw-bold">Dokumenty</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto footerTile corpBG"/>
+            <p>
+              <a href="#!" class="">Dokumenty archiwalne</a>
+            </p>
+            <p>
+              <a href="#!" class="">Regulaminy</a>
+            </p>
+            <p>
+              <a href="#!" class="">Polityka prywatności</a>
+            </p>
+            <p>
+              <a href="https://www.pois.gov.pl/media/99478/Klauzula_RODO.pdf" class="">Klauzula RODO</a>
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold">Dane</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto footerTile corpBG"/>
+            <p><i class="fas fa-home mr-3"></i> Warszawa PL 01-602</p>
+            <p><i class="fas fa-home mr-3"></i> ul. Józefa Sułkowskiego 4</p>
+            <p><i class="fas fa-envelope mr-3"></i> centrade@info.com</p>
+            <p><i class="fas fa-phone mr-3"></i> +48 382 222 322</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="text-center p-3">
+      © 2022 Copyright: Grupa CENTRADE.
+    </div>
+  </footer>
+  <!-- Footer -->
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

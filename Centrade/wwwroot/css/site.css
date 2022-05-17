@@ -1,0 +1,415 @@
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+body {
+    background-color: #f3f3f3;
+    padding-bottom: 70px;
+}
+
+/*BASE COLORS*/
+.client {
+    color: #b02c41;
+}
+
+.corp {
+    color: #1b3858;
+}
+
+.clientBG {
+    background-color: #b02c41;
+}
+
+.corpBG {
+    background-color: #1b3858;
+}
+
+/* NAVBAR ELEMENTS*/
+.ribbonLabel {
+    display: table;
+    min-height: 30px;
+    width: 100%;
+    background-color: #1b3858;
+}
+
+.banner {
+    height: 70px;
+}
+
+.leftNav {
+    margin-left: 10px;
+    float: right;
+}
+
+    .leftNav .navbar-nav {
+        float: right;
+    }
+
+.navbar a {
+    font-size: 1.2rem;
+}
+
+/*OFFER TAB*/
+.carouselContainer {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    min-width: 800px;
+}
+
+.carouselExampleIndicators {
+    width: 80%;
+}
+
+.bodyContent{
+    width: 100%;
+}
+
+/*INFO TAB*/
+.infocardContainer {
+    margin: auto;
+    width: 100%;
+    height: fit-content;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+    .infocardContainer .card {
+        overflow: auto;
+        height: 32rem;
+        width: 26rem;
+        margin: 15px;
+    }
+
+.viewHeader {
+    margin-top: 1rem;
+    padding-left: 2%;
+}
+
+.smallHeader {
+    margin-top: 60px;
+}
+
+.page {
+    display: inline;
+}
+
+    .page .card p {
+        font-size: 1.2rem;
+    }
+
+    .page .card-title {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    .page .card h6 {
+        font-size: 1.2rem;
+    }
+
+
+/* FOOTER */
+.containerFooter {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.footerTile {
+    width: 60px;
+    height: 2px
+}
+
+
+footer a {
+    text-decoration: none;
+    color: #444;
+}
+
+    footer a:hover {
+        color: #b02c41;
+    }
+
+footer h6 {
+    color: #1b3858;
+}
+
+
+/* Login */
+.loginBox {
+    position: relative;
+    margin: auto;
+    height: auto;
+    width: 24rem;
+}
+
+.loginParent {
+    padding-bottom: 5%;
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+    display: flexbox;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-items: center;
+}
+
+    .loginParent a {
+        text-decoration: none;
+        color: #444;
+    }
+
+    .loginParent input:focus {
+        border-color: #1b3858;
+    }
+
+    .loginParent button:hover {
+        background-color: #b02c41;
+        border-color: #b02c41;
+    }
+
+    .loginParent a:hover {
+        color: #b02c41;
+    }
+
+.loginRemberCheck:checked {
+    background-color: #1b3858;
+    border-color: #1b3858;
+}
+
+.loginButton {
+    width: 100%;
+    background-color: #1b3858;
+    border-color: #1b3858;
+}
+
+.instruction {
+    margin-left: 24rem;
+    position: absolute;
+    text-overflow: clip;
+    overflow: hidden;
+    width: 24rem;
+    height: 26rem;
+}
+
+/* CLIENT*/
+
+.clientContainer {
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+.clientInfo {
+    min-height: 35rem;
+    height: fit-content;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+    .clientInfo .infoHeader {
+        padding: 0.5rem;
+    }
+
+    .clientInfo .subHeader {
+        padding: 0.4rem;
+        font-size: 1.1rem;
+    }
+
+.baseInfo .list-group-item {
+    width: 50%;
+    min-width: 10rem;
+    border-radius: 0px;
+}
+
+.baseInfo .list-group {
+    border-radius: 0;
+}
+
+.clientInfo .left {
+    width: 60rem;
+    height: auto;
+    padding: 1%;
+}
+
+.clientInfo .right {
+    width: 40rem;
+    height: auto;
+    padding: 1%;
+}
+
+.clientDocuments {
+    margin-top: 2rem;
+    background-color: white;
+    padding: 2%;
+}
+
+.table {
+    margin-top: 1rem;
+}
+
+
+
+/*REPORT*/
+.reportContainer {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+.report {
+    margin: auto;
+    height: 45rem;
+    width: auto;
+    min-width: 25rem;
+    background-color: white;
+    padding: 5%;
+}
+
+    .report select {
+        height: 2.3rem;
+    }
+
+.rowMargin2rem {
+    margin-top: 2rem;
+}
+
+.rowMargin1rem {
+    margin-top: 1rem;
+}
+
+.report .submitRow {
+    float: right;
+}
+
+.report .submit {
+    width: 20rem;
+    height: 2.5rem;
+    background-color: #1b3858;
+    border-color: #1b3858;
+}
+
+.report input:focus {
+    border-color: #1b3858;
+}
+
+.report button:hover {
+    background-color: #b02c41;
+    border-color: #b02c41;
+}
+
+input[type="radio"]:checked {
+    background-color: #1b3858;
+    border-color: #1b3858;
+}
+
+input[type="checkbox"]:checked + label:before {
+    background-color: #1b3858;
+    border-color: #1b3858;
+}
+
+/*ANIMATION*/
+.successBox {
+    width: 100%;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 15%;
+}
+
+.successContainer {
+    padding: 5%;
+    margin: auto;
+    width: 70rem;
+    height: 40rem;
+    background-color: white;
+}
+
+#spin {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #b02c41;
+    border-radius: 50%;
+    border-top: 16px solid #1b3858;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.afterAnimation {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+#information {
+    display: none;
+    text-align: center;
+}

@@ -1,0 +1,92 @@
+﻿@page
+@model Centrade.Pages.ReportModel
+@{
+	ViewData["ClientLayout"] = "Zgłasznie szkody";
+}
+
+<h1 class="viewHeader">ZGŁOSZENIE SZKODY</h1>
+
+  <div class="reportContainer">
+    <div class="report">
+        <form>
+            <h5 class="client">NOWA SZKODA</h5>
+            <div class="form-group row rowMargin2rem">
+                <label for="colFormLabel" class="col-sm-2 col-form-label">TYP SZKODY</label>
+                <div class="col-sm-10">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="OC" value="OC" onclick="onTypeChange()">
+                        <label class="form-check-label" for="OC">OC</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="AC" value="AC" onclick="onTypeChange()">
+                        <label class="form-check-label" for="AC">AC</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="steal" value="Steal" onclick="onTypeChange()">
+                        <label class="form-check-label" for="steal">Kradzież</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row" id="faultRow">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-10">
+                    <input type="checkbox" class="form-control-file" id="faultCheckbox" onclick="onCheck()"> 
+                    <label class="col-sm-8" for="faultCheckbox">Czy do szkody doszło z Pani/Pana winy?</label>
+                </div>
+            </div>
+            <div class="form-group row rowMargin1rem" id="fileRow">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-10">
+                    <label class="col-sm-5" id="fileLabel" for="exampleFormControlFile1"></label>
+                    <input size="60" type="file" class="form-control col-sm-5" id="exampleFormControlFile1" >
+                </div>
+            </div>
+
+            <div class="form-group row rowMargin1rem">
+              <label for="colFormLabel" class="col-sm-2 col-form-label">EMAIL</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="colFormLabel">
+              </div>
+            </div>
+            <div class="form-group row rowMargin2rem">
+                <label for="colFormLabel" class="col-sm-2 col-form-label">NR KONTAKTOWY</label>
+                <div class="col-sm-10">
+                    <select class="custom-select mb-4 col-sm-12" id="phone" onchange="numberNewSelection()">
+                        <option value="1" selected>Domyślny</option>
+                        <option value="2">Inny</option>
+                    </select>   
+                </div>  
+            </div>
+            <div class="row" id="phoneRow">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-10">
+                    <label class="col-sm-2" id="fileLabel" for="phoneNumber">Numer</label>
+                    <div class="col-sm-12">
+                        <input type="tel" class="form-control" id="phoneNumber" onblur="validatePhoneNumber()">
+                    </div>
+                </div>        
+            </div>
+            <div class="row rowMargin1rem">
+                <div class="col-sm-2"></div>
+                <div class="col-md-10">
+                    <h6>Jeśli robisz zdjęcia obiektu szkody, proszę zadbaj o to aby były one wykonane w najlepszych możliwych warunkach oświetleniowych.</h6>
+                    <h6>Wymagane jest minimum 5 zdjęć. Dostępne formaty: JPEG, PNG, HEIC, PDF, GIF</h6>
+                </div>
+            </div>
+            <div class="form-group row rowMargin1rem">
+                <label for="formFileMultiple" class="form-label col-sm-2">ZDJĘCIA</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="file" id="formFileMultiple" multiple />
+                </div>
+            </div>
+            <div class="rowMargin2rem submitRow">
+                <a href="success.html"><button type="button" class="btn btn-primary submit">ZGŁOŚ</button></a>
+                
+            </div>
+        </form>
+
+    </div>
+  </div>
+
+  
+<script src="~/js/report.js" asp-append-version="true"></script>
